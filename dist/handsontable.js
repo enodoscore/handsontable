@@ -24,7 +24,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * 
  * Version: 6.2.2
- * Release date: 19/12/2018 (built at 18/12/2018 14:40:17)
+ * Release date: 19/12/2018 (built at 26/03/2019 14:22:51)
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -20349,7 +20349,7 @@ function () {
       var isHighPixelRatio = window.devicePixelRatio && window.devicePixelRatio > 1;
 
       if (isHighPixelRatio || !(0, _browser.isChrome)()) {
-        listenersToRegister.push([this.instance.wtTable.wtRootElement.parentNode, 'wheel', function (event) {
+        listenersToRegister.push([this.instance.wtTable.wtRootElement, 'wheel', function (event) {
           return _this.onCloneWheel(event);
         }]);
       } else {
@@ -29734,7 +29734,7 @@ Handsontable.DefaultSettings = _defaultSettings.default;
 Handsontable.EventManager = _eventManager.default;
 Handsontable._getListenersCounter = _eventManager.getListenersCounter; // For MemoryLeak tests
 
-Handsontable.buildDate = "18/12/2018 14:40:17";
+Handsontable.buildDate = "26/03/2019 14:22:51";
 Handsontable.packageName = "handsontable";
 Handsontable.version = "6.2.2";
 var baseVersion = "";

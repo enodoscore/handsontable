@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/handsontable/handsontable.git"
   },
+  "publishConfig": {
+    "registry": "http://52.165.21.157:4873"
+  },
   "bugs": {
     "url": "https://github.com/handsontable/handsontable/issues"
   },
@@ -41,7 +44,8 @@
     "build:languages": "cross-env BABEL_ENV=commonjs NODE_ENV=languages-development env-cmd ./hot.config.js webpack",
     "build:languages.min": "cross-env BABEL_ENV=commonjs NODE_ENV=languages-production env-cmd ./hot.config.js webpack",
     "watch": "cross-env BABEL_ENV=commonjs NODE_ENV=watch env-cmd ./hot.config.js webpack --hide-modules --watch src/index.js",
-    "prepublish": "npm run clean && npm run build:commonjs && npm run build:es"
+    "prepublish": "npm run clean && npm run build:commonjs && npm run build:es",
+    "pub": "./node_modules/.bin/np || true"
   },
   "keywords": [
     "data",
@@ -97,6 +101,7 @@
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
     "loader-utils": "^1.1.0",
+    "np": "^4.0.2",
     "on-build-webpack": "^0.1.0",
     "optimize-css-assets-webpack-plugin": "^3.1.1",
     "progress-bar-webpack-plugin": "^1.10.0",
