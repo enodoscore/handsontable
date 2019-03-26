@@ -197,7 +197,7 @@ class Overlays {
     const isHighPixelRatio = window.devicePixelRatio && window.devicePixelRatio > 1;
 
     if (isHighPixelRatio || !isChrome()) {
-      listenersToRegister.push([this.instance.wtTable.wtRootElement.parentNode, 'wheel', event => this.onCloneWheel(event)]);
+      listenersToRegister.push([this.instance.wtTable.wtRootElement, 'wheel', event => this.onCloneWheel(event)]);
 
     } else {
       if (this.topOverlay.needFullRender) {
