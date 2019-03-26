@@ -19,4 +19,5 @@ commonjs/
 es/
 
 # dist/
-dist/
+dist/*
+dist/handsontable.css
